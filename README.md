@@ -1,3 +1,3 @@
 # LivewireFlashQuotes
 
-![me](https://i.imgur.com/7NOCEtB.gif)
+![me](https://i.imgur.com/KkglGNg.gif)
