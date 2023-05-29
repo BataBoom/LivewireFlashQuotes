@@ -6,7 +6,7 @@
 </div>
 
 <div class="mt-16 flex justify-between">
-<a href="https://omccgrow.com/about-ommc"><p class="font-serif p-3 border-2 border-gray-200 rounded-md text-base hover:bg-seablue-500 hover:border-gray-200 cursor-pointer hover:text-black">Our Story</p></a>
+<x-nav-link route="inventory"><p class="font-serif p-3 border-2 border-gray-200 rounded-md text-base hover:bg-seablue-500 hover:border-gray-200 cursor-pointer hover:text-black">Our Story</p></x-nav-link>
 </div>
 </div>
                                           
