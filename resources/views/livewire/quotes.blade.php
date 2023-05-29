@@ -6,7 +6,7 @@
 </div>
 
 <div class="mt-16 flex justify-between">
-<x-nav-link route="inventory"><p class="font-serif p-3 border-2 border-gray-200 rounded-md text-base hover:bg-seablue-500 hover:border-gray-200 cursor-pointer hover:text-black">Our Story</p></x-nav-link>
+<x-nav-link route="about"><p class="font-serif p-3 border-2 border-gray-200 rounded-md text-base hover:bg-seablue-500 hover:border-gray-200 cursor-pointer hover:text-black">Our Story</p></x-nav-link>
 </div>
 </div>
                                           
