@@ -17,21 +17,21 @@ class Quotes extends Component
 
 
     public function mount() {
-
-        $this->randomNumber = rand(1,270);
+        
         $this->Quotes = QuotesResource::Inspire();
         $this->inspire = array_column($this->Quotes, 'quote');
         $this->source = array_column($this->Quotes, 'source');
+        $this->randomNumber = rand(array_key_first($this->inspire),array_key_last($this->inspire));
         $this->NewQuote = $this->inspire[$this->randomNumber];
         $this->NewSource = $this->source[$this->randomNumber];
         
     }
     public function hydrate() {
         $this->reset('randomNumber');
-        $this->randomNumber = rand(1,270);
         $this->Quotes = QuotesResource::Inspire();
         $this->inspire = array_column($this->Quotes, 'quote');
         $this->source = array_column($this->Quotes, 'source');
+        $this->randomNumber = rand(array_key_first($this->inspire),array_key_last($this->inspire));
         $this->NewQuote = $this->inspire[$this->randomNumber];
         $this->NewSource = $this->source[$this->randomNumber];
 
@@ -40,7 +40,6 @@ class Quotes extends Component
 
     public function poll()
     {
-        $this->randomNumber = rand(1,270);
         $this->refresh(); // Refresh quote
     }
 
